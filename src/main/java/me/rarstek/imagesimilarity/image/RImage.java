@@ -37,7 +37,12 @@ public class RImage extends AComparable {
             for(int j = 0; j < 4; ++j) {
                 BufferedImage subImage = new BufferedImage(subWidth, subHeight, this.image.getType());
                 Graphics2D imageCreator = subImage.createGraphics();
-                imageCreator.drawImage(this.image, 0, 0, subWidth, subHeight, subWidth * j, subHeight * i, subWidth * j + subWidth, subHeight * i + subHeight, (ImageObserver)null);
+                imageCreator.drawImage(this.image, 0, 0,
+                        subWidth, subHeight,
+                        subWidth * j, subHeight * i,
+                        subWidth * j + subWidth,
+                        subHeight * i + subHeight,
+                        null);
                 subImages[currentImage++] = subImage;
             }
         }

@@ -77,7 +77,6 @@ public class HistogramComparer implements IComparer {
         return image.getRGB(x, y, width, height, pixels, 0, width);
     }
 
-
     private double calcSimilarity(float[] sourceData, float[] candidateData) {
         double[] mixedData = new double[sourceData.length];
         for (int i = 0; i < sourceData.length; i++) {
@@ -91,7 +90,6 @@ public class HistogramComparer implements IComparer {
 
         return similarity;
     }
-
 
     @Override
     public int compare(BufferedImage pattern, BufferedImage image) {
