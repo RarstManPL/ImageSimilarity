@@ -20,11 +20,22 @@
         </plugins>
     </build>
 
+    <repositories>
+        <repository>
+            <id>opencv-repo</id>
+            <url>https://mvnrepository.com/artifact/org.opencv/opencv</url>
+        </repository>
+    </repositories>
+
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/opencv/opencv -->
         <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>31.1-jre</version>
+            <groupId>org.openpnp</groupId>
+            <artifactId>opencv</artifactId>
+            <version>3.2.0-0</version>
         </dependency>
+
     </dependencies>
+
+
 </project>
