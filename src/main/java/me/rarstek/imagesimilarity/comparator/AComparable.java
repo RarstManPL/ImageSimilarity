@@ -1,4 +1,4 @@
-package me.rarstek.imagesimilarity.comparer;
+package me.rarstek.imagesimilarity.comparator;
 
 public abstract class AComparable {
 

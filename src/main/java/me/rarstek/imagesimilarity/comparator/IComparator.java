@@ -1,8 +1,8 @@
-package me.rarstek.imagesimilarity.comparer;
+package me.rarstek.imagesimilarity.comparator;
 
 import java.awt.image.BufferedImage;
 
-public interface IComparer {
+public interface IComparator {
 
     int compare(BufferedImage pattern,
                 BufferedImage image);
